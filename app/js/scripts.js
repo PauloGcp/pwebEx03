@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const pessoaJuridica_1 = require("./pessoaJuridica");
+const pessoaFisica_1 = require("./pessoaFisica");
+const pessoa_1 = require("./pessoa");
+const joaozinDate = new Date('2015/01/01');
+const pessoaNormal = new pessoa_1.default('Jõaozin', joaozinDate);
+const joaoDate = new Date('2000/01/01');
+const pessoaFísica = new pessoaFisica_1.default('João', joaoDate, '001.002.003-45');
+const joaozaoDate = new Date('1979/01/01');
+const pessoaJurídica = new pessoaJuridica_1.default('Joãozao', joaozaoDate, '12.345.678/0001-00.');
+console.log(`Nome: ${pessoaJurídica.getNome()}\n Idade: ${pessoaJurídica.getIdade()}\n Data de nasc.: ${pessoaJurídica.getDataNascimento()} \n Cnpj: ${pessoaJurídica.getCnpj()}`);
+console.log(`Nome: ${pessoaFísica.getNome()}\n Idade: ${pessoaFísica.getIdade()}\n Data de nasc.: ${pessoaFísica.getDataNascimento()} \n Cpf: ${pessoaFísica.getCpf()}`);
+console.log(`Nome: ${pessoaNormal.getNome()}\n Idade: ${pessoaNormal.getIdade()}\n Data de nasc.: ${pessoaNormal.getDataNascimento()}`);

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "outDir": "app/js",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "preserveConstEnums": true,
+      "strict": true,
+      "noEmitOnError": true,
+      "noImplicitAny": true
+    },
+    "include": [
+      "app/ts/**/*"
+    ]
+  }
